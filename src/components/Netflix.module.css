@@ -1,0 +1,38 @@
+.card {
+    box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius :15px;
+}
+
+img {
+    width: 100%;
+}
+
+.card-content{
+    padding: 3.2rem  1.2rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card-heading {
+    margin-bottom: 3.2rem;
+}
+
+.card-content button {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    background-color: var(--btn-bg-color, #007bff); 
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .card-content button:hover {
+    background-color: var(--btn-hover-bg-color, #1a9438);
+    
+  }
+  .card-content button:active {
+    transform: scale(1.1); /* Increase size by 10% */
+  }
