@@ -8,7 +8,7 @@ export const ToggleSwitch = () => {
 
   const handleToggleSwitch = () => {
     setIsOn(!isOn);
-  };
+}; 
 
   const checkIsOn = isOn ? "on" : "off";
   const toggleBGColor = { backgroundColor: isOn ? "#4caf50" : "" };
@@ -20,15 +20,17 @@ export const ToggleSwitch = () => {
         <IoIosSwitch style={{ color: "red", textAlign: "center" }} />
         <PiUserSwitchFill />
       </h1>
+
       <div
         className="toggle-switch"
         style={toggleBGColor}
-        onClick={handleToggleSwitch}
-      >
+        onClick={handleToggleSwitch}>
+
         <div className={`switch ${checkIsOn}`}>
           <span className="switch-state">{checkIsOn}</span>
         </div>
       </div>
+
     </>
   );
 };
